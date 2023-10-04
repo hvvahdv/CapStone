@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <title>Fire Monitoring</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <img src="logo2.png" alt="Logo">
+                <h2>Monitoring</h2>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div>Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <div>Logout</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">Sensor 1</div>
+                        <div class="card-name">Temperature: 25.5°C</div>
+                        <div class="card-name">Humidity: 60%</div>
+                        <div class="card-name">Gas Level: 50ppm</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">Sensor 2</div>
+                        <div class="card-name">Temperature: 25.5°C</div>
+                        <div class="card-name">Humidity: 60%</div>
+                        <div class="card-name">Gas Level: 50ppm</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">Sensor 3</div>
+                        <div class="card-name">Temperature: 25.5°C</div>
+                        <div class="card-name">Humidity: 60%</div>
+                        <div class="card-name">Gas Level: 50ppm</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart" id="doughnut-chart">
+                    <h2>Sensor 1</h2>
+                    <canvas id="doughnut"></canvas>
+                </div>
+                <div class="chart" id="sensor-chart">
+                    <h2>Sensor 2</h2>
+                    <canvas id="sensor"></canvas>
+                </div>
+                <div class="chart" id="sensor2-chart">
+                    <h2>Sensor 3</h2>
+                    <canvas id="sensor2"></canvas>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
+    <script src="chart4.js"></script>
+</body>
+
+</html>
